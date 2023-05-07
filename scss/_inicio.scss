@@ -1,0 +1,75 @@
+
+.remera, .campera, .pantalon { 
+
+    width: 370px;
+    background-color: $color-terciario;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+    }
+    .remera {
+        margin-top: 220px;
+    }
+    
+    
+    @media (min-width: $tablet) {
+         .remera, .campera, .pantalon {
+            margin-top: 200px;   
+    
+    }
+    
+    }
+    
+    
+    
+    .foto {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:8px;
+    }
+    
+    .card5 {
+        height: 540px;
+    }
+    .card7 {
+        height: 537px;
+    }
+    
+    a {
+    
+        text-decoration: none;
+        color: black;
+    }
+     button {
+        padding: 20px 50px;
+        background: $color-terciario;
+        cursor: pointer;
+        font-family: $fuente-principal;
+        font-weight: 200;
+        font-size: 190%;
+        color: black;
+        opacity: 90%;
+        border: none;
+        outline: none;
+            
+     }
+        
+    .pantalon button:hover {
+        background-color: black;
+        color: $color-primario;
+    
+    }
+    .campera button:hover {
+        background-color: black;
+        color: $color-primario;
+    
+    }
+    .remera  button:hover { 
+        background-color: black;
+        color: $color-primario;
+    }

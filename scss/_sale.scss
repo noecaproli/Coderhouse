@@ -1,0 +1,66 @@
+.descuentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sale h2 {
+    color: $color-terciario;
+    font-family: $fuente-principal;
+    font-size: 30px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-body {
+    background-color: $color-terciario;
+}
+
+
+@media (min-width: $tablet) {
+    .ropa {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+    }
+}
+@media (min-width: $desktop) {
+    .ropa {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+}
+.card-img-top {
+    height: 450px;
+
+}
+.fotos {
+    margin-left: 45px;
+    text-align: center;
+    
+}
+.card-text, .card-title {
+    font-family: $fuente-secundaria;
+}
+.btnbtn-primary {
+    font-family: $fuente-principal;
+    background-color: $coolor-secundario;
+}
+.parrafo {
+    @extend .texto1;
+
+    font-family: $fuente-secundaria;
+    
+    background-color: black;
+    color: $color-terciario;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+.card:hover {
+    transform: scale(1.1);
+}

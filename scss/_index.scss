@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.fondo {
+    background-image: url(../img/fondoyakuza.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+
+
+@media (min-width: $tablet) {
+
+    .logo    {
+        width: 240px; 
+        height: 85px;
+        margin-left: 25px;
+        margin-top: 25px
+
+        }
+    }
+.centro {
+    font-family: $fuente-principal;
+    font-weight: 21px;
+    font-size: 21px;
+    color: #ffd413;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.centro1 {
+    text-align: center;
+    font-weight: 400;
+}
+.centro2 {
+    color: $color-terciario;
+    font-weight: 300;
+   
+}
+.centro3 {
+    color:$coolor-secundario;
+    font-size: 36px;
+}
+#ku {
+    color:#fc0a0a;
+}
+.centro4 {
+    font-weight: 400
+    
+}
+@media (min-width: $tablet) {
+    .centro   {
+       font-weight: 36px;
+       font-size: 36px;
+       margin-top: 15%;
+   
+       }
+   }
+
+@media (min-width: $desktopx6) {
+ .centro   {
+    
+    font-size: 48px;
+    
+
+    }
+}
+@media (min-width: $desktopx6) {
+    .centro1   {
+        
+        font-weight: 800;
+   
+       }
+   }
+   @media (min-width: $desktopx6) {
+    .centro2   {
+        font-weight: 600;
+   
+       }
+   }
+   
+   @media (min-width: $desktop) {
+    .centro4   {
+        font-weight: 800;
+   
+       }
+   }
+
+
+.boton0 {
+
+    padding: 5px 30px;
+    background: black;
+    opacity: 100%;
+    outline: none;
+    cursor: pointer;
+    font-family: $fuente-principal;
+    font-weight: 800;
+    font-size: 130%;
+    margin-bottom: 40px;
+    margin-left: 40%;
+    text-align: center;
+    
+}
+.boton {
+    text-decoration: none;
+    color: $color-terciario;
+}
+@media (min-width: $tablet) {
+   .boton0 { 
+    margin-left: 45%;
+    
+
+    }
+}

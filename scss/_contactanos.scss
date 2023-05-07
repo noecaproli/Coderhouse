@@ -1,0 +1,44 @@
+.contacto {
+    color:  $coolor-secundario;
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 15px;
+
+
+}
+.contacto {
+    @include flex-colum;
+}
+#enviar {
+   
+   margin-bottom: 5%;
+    
+}
+#enviar input {
+    @extend .input0;
+
+}
+
+.mapa {
+   padding: 2%;
+   
+}
+
+
+.titulo {
+ @extend .texto
+}
+
+.titulo2 {
+  color: white;
+  font-family: $fuente-principal;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: start;
+}

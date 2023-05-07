@@ -1,0 +1,150 @@
+
+.indumentaria {
+    color: $color-terciario;
+    font-family: $fuente-principal;
+    font-size: 30px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 580px) {
+    .indumentaria {
+        margin-top: 190px;   
+
+}    }
+@media (min-width: $tablet) {
+.indumentaria  {
+    margin-top: 170px;
+    }
+}
+.productos1 {
+    color:$coolor-secundario;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    @include flex-colum;
+    gap: 10px;
+   
+    
+}
+@media (min-width: 580px) {
+    .productos1 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+ }
+}
+
+.productos1 label {
+
+    padding: 8px  15px;
+    cursor: pointer;
+    background-color: black;
+    font-family: $fuente-principal;
+    font-size: 15px;
+    
+}
+
+
+.productos2 {
+    background-repeat: no-repeat;
+    
+    
+}
+.productos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    
+}
+
+.fotoaccesorios, .fotobuzos, .fotopantalones, .fotoremeras {
+width: 280px;
+background-color: $color-terciario;
+color: black;
+padding: 5px 5px;
+font-family: $fuente-secundaria;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.productos2 button {
+    padding: 5px 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: none;
+    background: black; 
+    opacity: 100%;
+    outline: none;
+    cursor: pointer;
+    color: $color-terciario;
+    font-family: $fuente-secundaria;
+    font-size: 14px;
+}
+.cards1 {
+    height: 400px;
+    width: 400px;
+}
+.cards4 {
+    height: 400px;
+    width: 402px;
+
+}
+.cards5 {
+    height: 417px;
+    width: 417px;
+
+}
+.cards10 {
+    height: 438px;
+    width: 438px;
+
+}
+
+ #remeras, #pantalones, #buzos, #accesorios, #todo {
+    display: none;
+ }
+
+.fotoaccesorios, .fotobuzos, .fotopantalones, .fotoremeras {
+    display: none;
+    
+}
+
+#accesorios:checked ~.productos2 .fotoaccesorios,
+#buzos:checked ~.productos2 .fotobuzos,
+#pantalones:checked ~.productos2 .fotopantalones,
+#remeras:checked ~.productos2 .fotoremeras{
+    display: flex;
+}
+
+
+#todo:checked ~.productos2 .fotoremeras,
+#todo:checked ~.productos2 .fotoaccesorios,
+#todo:checked ~.productos2 .fotobuzos,
+#todo:checked ~.productos2 .fotopantalones {
+    display: flex;
+    
+}
+.colecciones-indumentaria {
+
+    color: $coolor-secundario;
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 15px;
+    
+ }
+ .fotoaccesorios:hover {
+    transform: scale(1.1);
+ }
+ .fotoremeras:hover {
+    transform: scale(1.1);
+ }
+ .fotopantalones:hover {
+    transform: scale(1.1);
+ }
+ .fotobuzos:hover {
+    transform: scale(1.1);
+ }
