@@ -1,75 +1,108 @@
 .logo {
     @include logotipo;
+    
+    
 }
 
 .fondo1 {
     background-image: url(../img/fondoplastico.jpg);
     margin-bottom: 1%;
-   
+    
 }
+
+
 
 .solapa {
     top: 0%;
    background-color: $color-terciario;
-   opacity: 70%;
+   opacity: 90%;
    width: 100%;
    position: fixed;
    
   }
+
+  
   .lista1 {
     outline: none;
     display: inline;
     list-style: none;
     text-align: center;
-    margin-bottom: 1%;
+    margin-right: 8%;
     display: flex;
+    gap: 10px;
     flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+    
     
 }
 .lista1 li a {
+    
     text-decoration: none;
     font-family: $fuente-principal;
     font-weight: 50;
     font-size: 13px;
     color: black;
+    
 }
 .lista1 a:hover {
     color: $color-primario; }
 
+
+
 @media (min-width: $tablet) {
 
     .lista1{
-        gap: 40px;
+        gap: 30px;
         display: flex;
         flex-direction: row;
-        
+        position: absolute;
+        left: 38%;
+        bottom: 10%;
         }
     .lista1 li a {
 
         font-weight: 400;
-         font-size: 15px;
+         font-size: 14px;
+
 
     }
+    .solapa {
+        display: flex;
+        align-items: center;
+      }
+      
     }
     
-@media (min-width: $desktop) {
+    @media (min-width: 865px) {
+     .lista1 li a {
+        font-size: 16px;
+        
 
+     }
+     
+    }
+    
+@media (min-width: 1130px) {
+    .logo {
+    
+        margin-bottom: 10px;
+        
+        
+    }
     .lista1 {
-         
-     gap: 60px;
+     left: 25%;
+     gap: 70px;
     }
     .lista1 li a {  
      font-weight: 400;
      font-size: 18px;
          }
+         
  }
 
  .colecciones {
     
-    color: $coolor-secundario;
-    font-family: $fuente-principal;
+    color: $color-terciario;
+    font-family: $fuente-terciaria;
     font-weight: 400;
     font-size: 15px; }
 
@@ -78,11 +111,14 @@
  }
 
  .li1, .li2, .li3 {
+    color: $color-terciario;
+    font-family: $fuente-terciaria;
     list-style: none;
     gap: 8px;
     text-align: center;
     margin-top: 5%;
     @include flex-colum;
+    
 
 }
 
@@ -174,3 +210,4 @@
 
     }
 }
+

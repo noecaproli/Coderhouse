@@ -17,7 +17,7 @@
 .solapa {
   top: 0%;
   background-color: white;
-  opacity: 70%;
+  opacity: 90%;
   width: 100%;
   position: fixed;
 }
@@ -27,11 +27,10 @@
   display: inline;
   list-style: none;
   text-align: center;
-  margin-bottom: 1%;
+  margin-right: 8%;
   display: flex;
+  gap: 10px;
   flex-direction: column;
-  gap: 5px;
-  justify-content: center;
 }
 
 .lista1 li a {
@@ -48,18 +47,34 @@
 
 @media (min-width: 768px) {
   .lista1 {
-    gap: 40px;
+    gap: 30px;
     display: flex;
     flex-direction: row;
+    position: absolute;
+    left: 38%;
+    bottom: 10%;
   }
   .lista1 li a {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .solapa {
+    display: flex;
+    align-items: center;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 865px) {
+  .lista1 li a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1130px) {
+  .logo {
+    margin-bottom: 10px;
+  }
   .lista1 {
-    gap: 60px;
+    left: 25%;
+    gap: 70px;
   }
   .lista1 li a {
     font-weight: 400;
@@ -67,8 +82,8 @@
   }
 }
 .colecciones {
-  color: #FCF5AE;
-  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -78,6 +93,8 @@ h3 {
 }
 
 .li1, .li2, .li3 {
+  color: white;
+  font-family: "Rubik", sans-serif;
   list-style: none;
   gap: 8px;
   text-align: center;
@@ -588,6 +605,7 @@ button {
 }
 
 .contacto {
+  background-color: black;
   color: #FCF5AE;
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
@@ -604,6 +622,9 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 #enviar {
