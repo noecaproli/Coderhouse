@@ -16,8 +16,17 @@
     
     @media (min-width: $tablet) {
          .remera, .campera, .pantalon {
-            margin-top: 200px;   
+            margin-top: 190px;   
     
+    }
+    .pantalon {
+        margin-top: 1px;
+    }
+    @media (min-width: 1150px) {
+    .pantalon {
+        margin-top: 190px;
+    }
+        
     }
     
     }
@@ -60,16 +69,13 @@
      }
         
     .pantalon button:hover {
-        background-color: black;
-        color: $color-primario;
+        background-color: $coolor-secundario;
     
     }
     .campera button:hover {
-        background-color: black;
-        color: $color-primario;
+        background-color: $coolor-secundario;
     
     }
     .remera  button:hover { 
-        background-color: black;
-        color: $color-primario;
+        background-color: $coolor-secundario;
     }

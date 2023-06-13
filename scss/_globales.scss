@@ -1,16 +1,49 @@
 .logo {
     @include logotipo;
-    
+    margin-left: 32%;
     
 }
+@media (min-width: 475px) {
 
+    .logo{
+        margin-left: 34%;
+        }
+    } 
+
+    @media (min-width: 560px) {
+
+        .logo{
+            margin-left: 36%;
+            }
+        } 
+    
+        @media (min-width: 730px) {
+
+            .logo{
+                margin-left: 39%;
+                }
+            } 
+        
+            @media (min-width: 768px) {
+
+                .logo    {
+                    width: 240px; 
+                    height: 85px;
+                    margin-left: 25px;
+                    margin-top: 25px
+            
+                    }
+                }
 .fondo1 {
     background-image: url(../img/fondoplastico.jpg);
+    max-width: 100%;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
     margin-bottom: 1%;
+
     
 }
-
-
 
 .solapa {
     top: 0%;
@@ -18,7 +51,7 @@
    opacity: 90%;
    width: 100%;
    position: fixed;
-   
+   z-index: 1;
   }
 
   
@@ -110,7 +143,7 @@
     font-weight: 100;
  }
 
- .li1, .li2, .li3 {
+  .li3 {
     color: $color-terciario;
     font-family: $fuente-terciaria;
     list-style: none;
@@ -122,32 +155,6 @@
 
 }
 
-@media (min-width: $desktop) {
- .li1 {
-    display: inline;
-    position: absolute;
-    left: 135px;
-    margin-top: 5%;
-
-    }
-}
-@media (min-width: $desktop) {
-    .li2 {
-        display: inline;
-        position: absolute;
-        margin-top: 5%;
-        right: 54%;
-   
-       }
-   }
-   @media (min-width: $desktop) {
-    .li3 {
-        position: absolute;
-        margin-top: 5%;
-        right: 10%;
-   
-       }
-   }
 
    .input0 {
     background: transparent;
@@ -164,7 +171,7 @@
     gap: 5px;
     position: absolute;
     right: 47%;
-    margin-top: 5%;
+    margin-top: 3%;
 
 }
 
@@ -174,8 +181,8 @@
     @include flex-row;
     gap: 10px;
     position: absolute;
-    right: 47%;
-    margin-top: 17%;
+    right: 44%;
+    margin-top: 2%;
 
 
     }
@@ -183,13 +190,9 @@
 @media (min-width: $desktopx6) {
 
     .redes {
-       display: flex;
-       flex-direction: row;
-       justify-content: end;
        gap: 10px;
        position: absolute;
-       right: 10%;
-       margin-top: 10%;
+       right: 45%;
    
    
        }

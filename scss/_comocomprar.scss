@@ -3,7 +3,6 @@
     font-family: $fuente-secundaria;
     font-weight: 400;
     font-size: 15px;
-    margin-top: 155px;
     text-align:start;
 
 }
@@ -20,15 +19,39 @@
     color: $color-terciario;
     font-family: $fuente-principal;
     font-size: 30px;
-    margin-top: 195px;
+    margin-top: 220px;
     text-align: center;
 
 }
+@media (min-width: $tablet) {
+    .texto {
+        margin-top: 170px;
+        }
+    }
+
 
 
 .talle {
-    width: 50%;
-    display: inline-block;
-    margin-top: 3%;
-    margin-left: 25%;
+    width: 90%;
+    margin-top: 25px;
+    
 }
+.talle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        
+    }
+
+    
+    @media (min-width: $desktop) {
+        .talle {
+            width: 47%;
+            margin-top: 25px;
+            display: flex;
+            
+    
+    }    }

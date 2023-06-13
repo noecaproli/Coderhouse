@@ -8,40 +8,68 @@
     color: $color-terciario;
     font-family: $fuente-principal;
     font-size: 30px;
-    margin-top: 200px;
+    margin-top: 220px;
     display: flex;
     justify-content: center;
 
 }
+@media (min-width: $tablet) {
+    #sale h2 {
+        margin-top: 170px;
+        }
+    }
+
 
 .card-body {
     background-color: $color-terciario;
+}
+.ropa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    
+    
+    
 }
 
 
 @media (min-width: $tablet) {
     .ropa {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 7%;
+        
+    }
+}
+@media (min-width: 840px) {
+    .ropa {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1px;
+        margin-left: 1%;
+        
     }
 }
 @media (min-width: $desktop) {
     .ropa {
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4%;
+    }
+}
+@media (min-width: $desktopx6) {
+    .ropa {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        
+        margin-left: 2%;
     }
 }
 .card-img-top {
-    height: 450px;
+    height: 400px;
+    width: 300px;
+}
 
-}
-.fotos {
-    margin-left: 45px;
-    text-align: center;
-    
-}
 .card-text, .card-title {
     font-family: $fuente-secundaria;
 }
@@ -54,7 +82,6 @@
 
     font-family: $fuente-secundaria;
     
-    background-color: black;
     color: $color-terciario;
     margin-bottom: 3%;
     margin-top: 2%;

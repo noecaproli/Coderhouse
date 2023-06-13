@@ -3,15 +3,11 @@
     color: $color-terciario;
     font-family: $fuente-principal;
     font-size: 30px;
-    margin-top: 200px;
+    margin-top: 220px;
     display: flex;
     justify-content: center;
 }
-@media (min-width: 580px) {
-    .indumentaria {
-        margin-top: 190px;   
 
-}    }
 @media (min-width: $tablet) {
 .indumentaria  {
     margin-top: 170px;
